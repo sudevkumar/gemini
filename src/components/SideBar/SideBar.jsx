@@ -38,7 +38,11 @@ const SideBar = () => {
                 onClick={() => loadPropmt(ele)}
               >
                 <img src={assets.message_icon} alt="" />
-                {ele.length > 18 ? <p>{ele.slice(0, 18)}...</p> : <p>{ele}</p>}
+                {ele.length > 18 ? (
+                  <p className="para">{ele.slice(0, 18)}...</p>
+                ) : (
+                  <p className="para">{ele}</p>
+                )}
               </div>
             ))}
           </div>
